@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Standing Desk</title>
+    <title>GoGo Desk</title>
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Start -->
     <nav class="navigation">
         <div class="logo">
-            Logo
+            <img src="./images/logo.png" class="logo-image" alt="Logo">
         </div>
         <div class="nav-link">
             <ul class="menu">
@@ -33,18 +33,29 @@
             <input type="text" placeholder="Search...">
         </div>
     </nav>
+    <!-- Navigation End -->
 
-    <!-- Modal Structure -->
+    <!-- Modal Box Start -->
     <div id="modal">
         <div class="modal-content">
-            <div>
-                <h2>You need to register first</h2>
+            <div class="logo">
+                <img src="./images/logo.png" class="logo-image" alt="Logo">
             </div>
-            <div class="close-btn">
-                <a href="#" class=""><button>Close</button></a>
+            <h2>Welcome to Our GoGo-Desk</h2>
+            <h5>Thank You for Coming Here</h5>
+            <div class="modal-btn">
+                <div class="close-btn">
+                    <a href="./product.html"><button>Our Products</button></a>
+                </div>
+                <div class="close-btn">
+                    <a href="#"><button>Close</button></a>
+                </div>
             </div>
         </div>
     </div>
+    <!-- Modal Box End -->
+
+    <!-- Welcome Page Start-->
     <div class="welcome-page">
         <div class="welcome-text">
             <div>
@@ -58,12 +69,14 @@
             </div>
             <div>
                 <!-- Pop up Messages -->
-                <a href="#modal" class="open-btn"><button>Explore Products</button></a>
+                <a href="#modal"><button>Explore Products</button></a>
             </div>
 
         </div>
     </div>
+    <!-- Welcome Page End -->
 
+    <!-- Product Slider Start-->
     <div class="product-slider">
         <div class="header">
             <h2>Our Products</h2>
@@ -81,7 +94,9 @@
             </div>
         </div>
     </div>
+    <!-- Product Slider End -->
 
+    <!-- Product-Container Start-->
     <section class="product-container">
         <div class="header">
             <h2>Special Offers</h2>
@@ -182,7 +197,9 @@
             </div>
         </div>
     </section>
+    <!-- Product Container End -->
 
+    <!-- Our Clients Start -->
     <div class="our-clients">
         <div class="header">
             <h2>Our Happy Clients</h2>
@@ -273,12 +290,38 @@
             </div>
         </div>
     </div>
+    <!-- Our Clients End -->
 
+    <!-- Contact Us Section Start-->
+
+    <!-- Contact Us Section End -->
+
+    <!-- Map Section -->
+    <div>
+        <section class="map-container">
+            <div class="col-md-10 offset-md-1">
+                <div class="map_inner">
+                    <div class="header">
+                        <h2>Find Us on Google Map</h2>
+                    </div>
+                    <div class="google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8540.055040046165!2d96.14898262030155!3d16.809168351617423!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1726504109206!5m2!1sen!2smm"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Map Section End -->
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="quick-links-logo">
-                <div class="footer-logo">
-                    <h2>Logo</h2>
+                <div class="logo">
+                    <img src="./images/logo.png" class="logo-image" alt="Logo">
                 </div>
                 <div class="quick-links">
                     <ul>
@@ -307,6 +350,8 @@
             </div>
         </div>
     </footer>
+    <!-- Footer End -->
+
 </body>
 
 </html>

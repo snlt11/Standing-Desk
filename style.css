@@ -5,6 +5,13 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Logo Image */
+.logo-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
 /* Navigation Bar */
 .navigation {
     width: 100%;
@@ -14,7 +21,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     z-index: 1;
 }
 
@@ -150,10 +157,12 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .close-btn {
-    margin-top: 100px;
+    margin-top: 20px;
     background-color: #c07d53;
     color: #c07d53;
     border: none;
@@ -161,6 +170,22 @@
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    width: 100%
+}
+
+.close-btn>a>button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.modal-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 58%;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -391,7 +416,7 @@ footer {
 }
 
 .footer-content {
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
 }
 
@@ -399,10 +424,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer-logo h2 {
-    margin: 0;
 }
 
 .quick-links ul {
@@ -509,3 +530,19 @@ hr {
     font-size: 16px;
     cursor: pointer;
 }
+
+
+/* Map Section */
+.map-container {
+    margin: 0 auto;
+    padding: 50px 0px;
+    max-width: 70%;
+}
+
+.google-map {
+    margin-top: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Contact US  */
