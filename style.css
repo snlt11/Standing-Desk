@@ -22,6 +22,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
 }
 
@@ -75,6 +78,7 @@
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 /* Welcome Page */
@@ -119,6 +123,7 @@
 .welcome-text button {
     padding: 10px 20px;
     font-size: 16px;
+    height: 52px;
     border: none;
     border-radius: 5px;
     background-color: #c07d53;
@@ -540,6 +545,64 @@ hr {
     cursor: pointer;
 }
 
+/* Contact US */
+
+.about-us {
+    margin-top: 150px;
+}
+
+.about-form {
+    max-width: 600px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+textarea,
+label {
+    width: 650px;
+    display: block;
+}
+
+.about-form input {
+    width: 650px;
+    display: block;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #000;
+}
+
+input,
+textarea {
+    color: #000;
+    font-weight: 500;
+    background: white;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 300;
+    background: #c07d53;
+    color: white;
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+
 
 /* Map Section */
 .map-container {
@@ -556,7 +619,6 @@ hr {
 
 /* Card  */
 .card {
-    font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     margin: 0;
     padding: 20px;
@@ -565,7 +627,7 @@ hr {
 .cart-page {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 100px auto;
     background-color: #fff;
     border-radius: 8px;
