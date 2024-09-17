@@ -35,6 +35,84 @@
         </div>
     </nav>
     <!-- Navigation End -->
+
+    <!-- Checkout Start -->
+    <div class="card">
+        <div class="cart-page">
+            <div class="cart-details">
+                <h1>Cart Details</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Sub Total</th>
+                            <th>Remove Product</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://via.placeholder.com/110" alt="Product Image"></td>
+                            <td>Standing Desk</td>
+                            <td>$ 299.00</td>
+                            <td>
+                                <div class="quantity-form">
+                                    <button class="quantity-button decrement">-</button>
+                                    <input type="text" class="quantity" value="2" readonly>
+                                    <button class="quantity-button increment">+</button>
+                                </div>
+                            </td>
+                            <td>$ 598.00</td>
+                            <td><button class="remove-button">✖ Remove</button></td>
+                        </tr>
+                        <tr></tr>
+                        <td><img src="https://via.placeholder.com/110" alt="Product Image"></td>
+                        <td>Standing Desk</td>
+                        <td>$ 399.00</td>
+                        <td>
+                            <div class="quantity-form">
+                                <button class="quantity-button decrement">-</button>
+                                <input type="text" class="quantity" value="1" readonly>
+                                <button class="quantity-button increment">+</button>
+                            </div>
+                        </td>
+                        <td>$ 798.00</td>
+                        <td><button class="remove-button">✖ Remove</button></td>
+                        </tr>
+                        <tr></tr>
+                        <td><img src="https://via.placeholder.com/110" alt="Product Image"></td>
+                        <td>Standing Desk</td>
+                        <td>$ 199.00</td>
+                        <td>
+                            <div class="quantity-form">
+                                <button class="quantity-button decrement">-</button>
+                                <input type="text" class="quantity" value="3" readonly>
+                                <button class="quantity-button increment">+</button>
+                            </div>
+                        </td>
+                        <td>$ 597.00</td>
+                        <td><button class="remove-button">✖ Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-summary">
+                <h2>Have coupon?</h2>
+                <form action="" method="post" class="coupon-form">
+                    <input type="text" name="coupon" placeholder="Coupon code">
+                    <button type="submit">Apply</button>
+                </form>
+                <p>Total Products: $ 1993.00</p>
+                <p>Delivery charges: $ 50</p>
+                <h3>Grand Total: $ 2043.00</h3>
+                <button class="checkout-button">Checkout</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Checkout End -->
 </body>
 
 </html>
