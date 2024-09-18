@@ -283,8 +283,8 @@
 }
 
 .product {
-    width: 330px;
-    height: 480px;
+    width: 400px;
+    height: 500px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
@@ -379,6 +379,25 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+}
+
+.product-image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.health-benefit {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    margin-top: 60px;
 }
 
 
@@ -561,6 +580,7 @@ textarea,
 label {
     width: 650px;
     display: block;
+    color: #000;
 }
 
 .about-form input {
@@ -570,7 +590,7 @@ label {
 
 input::placeholder,
 textarea::placeholder {
-    color: #000;
+    color: #636363;
 }
 
 input,
@@ -618,6 +638,12 @@ button {
 }
 
 /* Card  */
+
+.order-photo {
+    width: 80px;
+    height: 80px;
+}
+
 .card {
     background-color: #f8f8f8;
     margin: 0;
