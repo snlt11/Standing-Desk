@@ -777,5 +777,359 @@ th {
 }
 
 .checkout-button:hover {
-    background-color: #218838;
+    background-color: #5dcf76;
+}
+
+
+.mobile-nav {
+    display: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    /* Menu style for mobile */
+    .menu {
+        text-align: right;
+        position: fixed;
+        width: 100%;
+        z-index: 200;
+    }
+
+    /* Hide the checkbox */
+    #nav-check {
+        display: none;
+    }
+
+    /* Hamburger icon style */
+    .nav-button {
+        width: 48px;
+        height: 30px;
+        padding: 12px;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 201;
+    }
+
+    .nav-button span {
+        height: 3px;
+        width: 100%;
+        background: black;
+        display: inline-block;
+        margin-bottom: 6px;
+        transition: all 0.5s cubic-bezier(.62, .43, .35, 1.47);
+    }
+
+    /* Toggle icon animation */
+    #nav-check:checked~.nav-button span:nth-child(1) {
+        transform: rotate(45deg) translateY(6px) translateX(6px);
+    }
+
+    #nav-check:checked~.nav-button span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #nav-check:checked~.nav-button span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-7px) translateX(7px);
+    }
+
+    /* Navigation styling */
+    nav {
+        text-align: left;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        height: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #0c1019;
+        display: block;
+        font-size: 18px;
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.4s cubic-bezier(.22, .43, .35, 1.5);
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #b4ac97;
+    }
+
+    nav a:hover {
+        background: #FFF6F1;
+    }
+
+    #nav-check:checked~nav {
+        height: 250px;
+    }
+
+    #nav-check:checked~nav a {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /* Navigation */
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Logo */
+    .logo-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Welcome Page */
+    .welcome-text p,
+    .welcome-text strong {
+        font-size: 30px;
+    }
+
+    .welcome-text button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        height: 52px;
+        border: none;
+        border-radius: 5px;
+        background-color: #c07d53;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Product Slider */
+    .product-slider {
+        position: relative;
+        min-height: 350px;
+    }
+
+    .slide-container {
+        width: 90%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        left: 5%;
+    }
+
+    .slider {
+        position: relative;
+        height: 300px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 100%;
+        animation: slide 10s infinite;
+    }
+
+    .slider img {
+        margin: 0px 10px;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(-100%);
+        }
+
+        50% {
+            transform: translateX(-100%);
+        }
+
+        55% {
+            transform: translateX(-200%);
+        }
+
+        75% {
+            transform: translateX(-200%);
+        }
+
+        80% {
+            transform: translateX(-300%);
+        }
+
+        100% {
+            transform: translateX(-300%);
+        }
+    }
+
+
+    /* Product Container */
+    .products {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product {
+        width: 100%;
+        height: auto;
+    }
+
+    .product img {
+        height: auto;
+    }
+
+    /* Our Clients Section */
+    .clients {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Contact Us Form */
+    .about-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    textarea,
+    label {
+        width: 200px;
+    }
+
+    .about-form input,
+    .about-form textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-links-logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .quick-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-follow {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Health Benefit Page */
+
+    .our-clients {
+        padding: 10px;
+    }
+
+    .health-benefit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .review {
+        margin-bottom: 10px;
+    }
+
+    .client {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .product-image-container {
+        width: 50%;
+    }
+
+    .product-image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .client-info {
+        margin-left: 10px;
+    }
+
+    .client-name h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .client-name h5 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .welcome-text p,
+    .welcome-text strong {
+        font-size: 20px;
+    }
+
+    .product-name-rating h2 {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 14px;
+    }
+
+    .header h2 {
+        font-size: 24px;
+    }
 }
