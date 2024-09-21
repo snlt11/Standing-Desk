@@ -1071,12 +1071,14 @@ th {
     .card {
         width: 90%;
         margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 15px;
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        box-shadow: none;
     }
+
+    .card:hover {
+        box-shadow: none
+    }
+
 
     .review {
         margin-bottom: 10px;
@@ -1110,6 +1112,108 @@ th {
     .client-name h5 {
         font-size: 14px;
         margin: 0;
+    }
+
+    /* Cart Page */
+
+    .cart-page {
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    /* Cart Details */
+    .cart-details {
+        margin-right: 0;
+    }
+
+    .cart-details h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    /* Product Image */
+    .order-photo {
+        max-width: 70px;
+        height: auto;
+    }
+
+    /* Quantity Form */
+    .quantity-form {
+        justify-content: flex-start;
+    }
+
+    .quantity {
+        width: 35px;
+        padding: 5px;
+    }
+
+    .quantity-button {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    /* Remove Button */
+    .remove-button {
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    /* Cart Summary */
+    .cart-summary {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .cart-summary h2 {
+        font-size: 18px;
+    }
+
+    .coupon-form {
+        flex-direction: column;
+    }
+
+    .coupon-form input,
+    .coupon-form button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .cart-summary p,
+    .cart-summary h3 {
+        font-size: 16px;
+        text-align: right;
+    }
+
+    .checkout-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
     }
 
 }
